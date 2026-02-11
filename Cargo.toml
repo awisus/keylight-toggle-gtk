@@ -1,0 +1,17 @@
+[package]
+name = "keylight-toggle"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.101"
+async-trait = "0.1.89"
+clap = { version = "4.5.58", features = ["derive"] }
+futures-util = { version = "0.3.32", default-features = false, features = ["std", "async-await"] }
+glib = "0.21.5"
+gtk = "0.18.2"
+libappindicator = "0.9.0"
+mdns = "3.0.0"
+reqwest = { version = "0.13.2", features = ["blocking", "json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.49.0", features = ["full"] }
